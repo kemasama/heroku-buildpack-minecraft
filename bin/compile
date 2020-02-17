@@ -62,6 +62,7 @@ echo "done"
 
 minecraft_version=${MINECRAFT_VERSION:-"1.14.4"}
 
+<< COMMENTOUT
 if echo "$minecraft_version" | grep -q '^1\.13.*$'; then
   minecraft_uuid="${MINECRAFT_UUID:="d0caafb8438ebd206f99930cfaecfa6c9a13dca0"}"
   minecraft_url="https://launcher.mojang.com/mc/game/${minecraft_version}/server/${minecraft_uuid}/server.jar"
@@ -71,6 +72,7 @@ elif echo "$minecraft_version" | grep -q '^1\.14.*$'; then
 else
   minecraft_url="https://s3.amazonaws.com/Minecraft.Download/versions/${minecraft_version}/minecraft_server.${minecraft_version}.jar"
 fi
+COMMENTOUT
 
 minecraft_url = "https://papermc.io/api/v1/paper/1.14.4/243/download";
 
