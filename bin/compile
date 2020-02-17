@@ -64,7 +64,7 @@ minecraft_version=${MINECRAFT_VERSION:-"1.14.4"}
 minecraft_uuid="${MINECRAFT_UUID:="d0d0fe2b1dc6ab4c65554cb734270872b72dadd6"}"
 minecraft_url = "https://papermc.io/api/v1/paper/${minecraft_version}/243/download"
 
-echo -n "----> Minecraft URL ${minecraft_url}..."
+echo "----> Minecraft URL ${minecraft_url}..."
 
 #<< COMMENTOUT
 #if echo "$minecraft_version" | grep -q '^1\.13.*$'; then
