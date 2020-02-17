@@ -75,7 +75,7 @@ else
 fi
 COMMENTOUT
 
-minecraft_url = "https://papermc.io/api/v1/paper/1.14.4/243/download";
+minecraft_url = "https://papermc.io/api/v1/paper/1.14.4/243/download"
 
 echo -n "-----> Installing Minecraft ${minecraft_version}... "
 curl -o minecraft.jar -s -L $minecraft_url
